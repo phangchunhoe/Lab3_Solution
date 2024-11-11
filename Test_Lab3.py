@@ -29,6 +29,14 @@ def test_bubble_sort_invalid():
 
     assert (result == 2)
 
+def test_bubble_sort_more_than_10():
+    result = []
+    input_arr = [64, 34, 25, 12, 22, 11, 90, 88, 75, 43, 23]
+
+    result = Lab3.bubble_sort(input_arr, 3)
+
+    assert (result == 1)
+
 def test_bubble_sort_less():
     result = []
     input_arr = [64, 34, 25, 12, 22]
